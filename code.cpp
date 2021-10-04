@@ -1,15 +1,15 @@
 //CODE FOR ADDING ALL ELEMENT OF ARRAY
-#include <bits/stdc++.h>
-using namespacestd;
+#include <iostream>
+using namespace std;
 
 int main (){
-  int n;cin>>n;
-  int arr;
-  cin>>arr;
+  int n;
+  cin>>n;
+  int *arr = new int(25);
   int sum=0;
   for(int i=0;i<n;i++){
     cin>>arr[i];
-    sum+=a[i];
+    sum+=arr[i];
   }
   
   cout<<sum<<"\n";
