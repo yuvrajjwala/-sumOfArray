@@ -8,13 +8,13 @@
 /*Sum of the array*/
 void sum_array(int arr[], int n)
 {
-    int i,sum=0;
+    int i,sum = 0;
      /**
      * Add each array element to sum
      **/
-    for(i=0; i<n; i++)
+    for(i = 1; i <= n; i++)
     {
-        sum = sum + arr[i];
+        sum += arr[i];
     }
 
     /** 
@@ -27,7 +27,7 @@ void sum_array(int arr[], int n)
 
 
 /*The driver code*/
-int main(void)
+int main()
 {
     int *arr,n,i;
 
