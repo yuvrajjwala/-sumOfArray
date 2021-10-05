@@ -40,6 +40,16 @@ int getCount(struct Node* head)
 	}
 	return count;
 }
+/* deletes the topmost element in the linked list */
+void pop(struct Node **head_ref){
+    struct Node * current = (*head_ref);
+    if(current !=NULL){
+        (*head_ref) = (*head_ref)->next; 
+        free(current);
+    }
+    else printf("Stack Underflow !!\n");
+   
+}
 
 /* Driver program to test count function*/
 int main()
@@ -57,5 +67,9 @@ int main()
 
 	/* Check the count function */
 	printf("count of nodes is %d", getCount(head));
+	
+	pop(&head);
+	printf("count of nodes is %d", getCount(head));
+	
 	return 0;
 }
