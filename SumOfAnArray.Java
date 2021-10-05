@@ -11,10 +11,10 @@ class Sum
         {
          array[i] = sc.nextInt();
         }
-        for( int num : array)
+        for( int num=0; num<10; num++)
           {
-           sum = sum+num;
+           sum = sum+array[num];
           }
-          System.out.println("Sum of array elements is "+sum);
+          System.out.println("Sum of the array elements is "+sum);
      }
   }
